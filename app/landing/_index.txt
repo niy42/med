@@ -1,0 +1,230 @@
+"use client";
+
+import React from "react";
+import { Img, Text, Heading, Button } from "../components";
+import Footer from "../components/Footer";
+import LandingFrame1000000859 from "./LandingFrame1000000859";
+import LandingFrame1000000869 from "./LandingFrame1000000869";
+import LandingGroup9128 from "./LandingGroup9128";
+import LandingGroup9131 from "./LandingGroup9131";
+import LandingGroup9305 from "./LandingGroup9305";
+import LandingGroup9484 from "./LandingGroup9484";
+import Link from "next/link";
+import {
+  AccordionItemPanel,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemState,
+  Accordion,
+  AccordionItem,
+} from "react-accessible-accordion";
+
+const accordionData = [
+  { canISeeWhoReads: "Can I see who reads my email campaigns?" },
+  { doYouOfferNonProfit: "Do you offer non-profit discounts?" },
+  { canISeeWhoReads1: "Can I see who reads my email campaigns?" },
+  { canISeeWhoReads2: "Can I see who reads my email campaigns?" },
+];
+
+export default function LandingPage() {
+  return (
+    <div className="flex w-full flex-col gap-16 bg-secondary_color py-10 sm:gap-8 sm:py-4">
+      <header className="mx-20 flex items-center justify-between gap-5 rounded-[10px] bg-gray-50_02 px-8 py-2 md:mx-0 md:flex-col sm:px-4">
+        <Img
+          src="img_img_20231009_wa0000_prev_ui.png"
+          width={192}
+          height={72}
+          alt="Img 20231009 Wa0000 Prev Ui"
+          className="h-[72px] w-[12%] object-contain md:w-full"
+        />
+        <ul className="!mb-2.5 flex items-start gap-[38px] self-end sm:flex-col">
+          <li>
+            <Link href="#">
+              <div className="flex flex-col items-center gap-1.5">
+                <Heading
+                  size="heading2xl"
+                  as="h6"
+                  className="!font-sfprotext text-[16px] font-semibold tracking-[0.24px] !text-gray-900_99 lg:text-[13px]"
+                >
+                  Home
+                </Heading>
+                <div className="h-[6px] w-[18px] rounded-[3px] bg-green-900_01" />
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="lg:text-[13px]">
+              <Heading
+                size="heading2xl"
+                as="h6"
+                className="!font-sfprotext text-[16px] font-semibold tracking-[0.24px] !text-gray-900_99"
+              >
+                Services
+              </Heading>
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="lg:text-[13px]">
+              <Heading
+                size="heading2xl"
+                as="h6"
+                className="!font-sfprotext text-[16px] font-semibold tracking-[0.24px] !text-gray-900_99"
+              >
+                About
+              </Heading>
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="lg:text-[13px]">
+              <Heading
+                size="heading2xl"
+                as="h6"
+                className="!font-sfprotext text-[16px] font-semibold tracking-[0.24px] !text-gray-900_99"
+              >
+                Community
+              </Heading>
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="lg:text-[13px]">
+              <Heading
+                size="heading2xl"
+                as="h6"
+                className="!font-sfprotext text-[16px] font-semibold tracking-[0.24px] !text-gray-900_99"
+              >
+                FAQs
+              </Heading>
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="lg:text-[13px]">
+              <Heading
+                size="heading2xl"
+                as="h6"
+                className="!font-sfprotext text-[16px] font-semibold tracking-[0.24px] !text-gray-900_99"
+              >
+                Contact
+              </Heading>
+            </Link>
+          </li>
+        </ul>
+        <div className="mr-3 flex w-[16%] items-center justify-between gap-5 lg:mr-0 md:mr-0 md:w-full">
+          <Heading
+            size="heading2xl"
+            as="h6"
+            className="!font-nunito text-[16px] font-bold tracking-[0.24px] !text-light_green-900 lg:text-[13px]"
+          >
+            Login
+          </Heading>
+          <Button
+            color="light_green_900"
+            size="11xl"
+            className="min-w-[138px] rounded-[26px] px-[34px] font-nunito font-semibold tracking-[0.24px] sm:px-4"
+          >
+            Sign up
+          </Button>
+        </div>
+      </header>
+      <div className="flex flex-col gap-[60px] sm:gap-[30px]">
+        <div className="flex flex-col items-center">
+          <LandingGroup9305 />
+          <LandingGroup9128 />
+          <LandingGroup9484 />
+          <LandingFrame1000000859 />
+          <LandingGroup9131 />
+          <div className="relative mt-[110px] h-[664px] w-[42%]">
+            <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max flex-1 flex-col gap-8">
+              <div className="mx-[50px] flex flex-col items-start md:mx-0">
+                <Heading
+                  size="heading12xl"
+                  as="h2"
+                  className="!font-sfprotext text-[42px] font-semibold capitalize !text-blue_gray-900_04 lg:text-[35px] md:text-[26px]"
+                >
+                  <span className="text-blue_gray-900_04">Frequently Ask&nbsp;</span>
+                  <span className="text-light_green-900">Questions</span>
+                </Heading>
+                <div className="mr-20 h-[5px] w-[48%] self-end bg-light_green-900 md:mr-0" />
+                <Text
+                  as="p"
+                  className="ml-9 mt-3.5 self-stretch text-center !font-sfprotext text-[16px] font-medium leading-[155%] tracking-[0.24px] !text-blue_gray-900_04 lg:text-[13px] md:ml-0"
+                >
+                  We use only the best quality materials on the market in order to provide the best products to our
+                  patients.
+                </Text>
+              </div>
+              <Accordion preExpanded={[0]} className="flex flex-col gap-8">
+                {accordionData.map((d, i) => (
+                  <AccordionItem uuid={i} key={`Group 8050${i}`}>
+                    <div className="flex w-[86%] flex-col gap-5 rounded-[10px] bg-light_green-900 p-[18px] lg:w-full md:w-full">
+                      <AccordionItemHeading className="w-full">
+                        <AccordionItemButton>
+                          <AccordionItemState>
+                            {(props) => (
+                              <>
+                                <div className="flex items-start justify-between gap-5 md:flex-col">
+                                  {props?.expanded ? (
+                                    <Img
+                                      src="defaultNoData.png"
+                                      width={570}
+                                      height={44}
+                                      alt="Group 205"
+                                      className="relative ml-[-388px] h-[44px] w-full self-end object-contain lg:h-auto md:ml-0"
+                                    />
+                                  ) : (
+                                    <Button
+                                      size="xl"
+                                      shape="square"
+                                      className="mr-[90px] w-[32px] rotate-[45deg] px-0.5 md:mr-0"
+                                    >
+                                      <Img src="defaultNoData.png" width={28} height={28} />
+                                    </Button>
+                                  )}
+                                  <Heading
+                                    size="b1_medium"
+                                    as="h3"
+                                    className="!font-generalsans text-[18px] font-medium tracking-[0.27px] !text-secondary_color lg:text-[15px]"
+                                  >
+                                    {d.canISeeWhoReads}
+                                  </Heading>
+                                </div>
+                              </>
+                            )}
+                          </AccordionItemState>
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="ml-7 mr-5 md:mx-0">
+                          <Text
+                            size="text2xl"
+                            as="p"
+                            className="!font-sfprotext text-[18px] font-medium leading-[155%] tracking-[0.27px] !text-secondary_color lg:text-[15px]"
+                          >
+                            Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa.
+                            Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim
+                            odio enim.
+                          </Text>
+                        </div>
+                      </AccordionItemPanel>
+                    </div>
+                    <div className="h-px w-[79%] rotate-[0deg] bg-brand_gray-20-0" />
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+            <div className="absolute right-0 top-0 m-auto w-[16%] rounded-[58px] bg-white-a700_d8 px-6 py-8 sm:p-4">
+              <Img
+                src="img_group_55.png"
+                width={70}
+                height={46}
+                alt="Group 20"
+                className="mb-3 h-[46px] w-full object-cover lg:h-auto md:h-auto"
+              />
+            </div>
+          </div>
+          <LandingFrame1000000869 />
+        </div >
+        <Footer className="gap-[30px]" />
+      </div >
+    </div >
+  );
+}
