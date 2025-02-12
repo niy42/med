@@ -30,7 +30,7 @@ const Img: React.FC<React.PropsWithChildren<ImgProps>> = ({
   }, [src]);
 
   return (
-    <Image
+    <img
       className={className}
       src={isStatic ? imgSrc : BASE_URL + imgSrc}
       alt={alt}
